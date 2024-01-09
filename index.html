@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="groups">
+            <ul id="collectionList"></ul>
+            <div class="add-group-form">
+                <h2>Add Group</h2>   
+                <form id="create-group" action="" method="post">
+                    <input type="text" id="message-input" name="group_name">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="chat">
+            <ul id="messages"></ul>
+            <form id="message-form">
+                <input id="message-text" type="text" />
+                <input type="hidden" id="groupIdInput" name="groupId">
+                <button id="message-btn" type="submit">Send</button>
+              </form>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
